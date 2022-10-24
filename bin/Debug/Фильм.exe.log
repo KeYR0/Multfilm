@@ -1,0 +1,47 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\FDSFSD\bin\Debug\Фильм.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x6626E156 в функции SymGetLineFromAddrW64(). Попытка прочесть данные по адресу 0x045857D0 в модуле c:\program files\codeblocks\mingw\include\Windows\MgwHelp32.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdrE0, Thread: 0x9CCC (Canvas), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x6626E156 in c:\program files\codeblocks\mingw\include\Windows\MgwHelp32.dll: SymGetLineFromAddrW64()
+# 2 0x66244A69 in c:\program files\codeblocks\mingw\include\Windows\MgwHelp32.dll: SymGetLineFromAddrW64()
+# 3 0x75C67E09 in C:\WINDOWS\System32\msvcrt.dll: free()
+# 4 0x6625AC20 in c:\program files\codeblocks\mingw\include\Windows\MgwHelp32.dll: SymGetLineFromAddrW64()
+# 5 0x77A1B6B3 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlSetLastWin32ErrorAndNtStatusFromNtStatus()
+# 6 0x762A3122 in C:\WINDOWS\System32\KERNELBASE.dll: GetConsoleMode()
+# 7 0x75C89C32 in C:\WINDOWS\System32\msvcrt.dll: unlock()
+# 8 0x0040F951 in D:\FDSFSD\bin\Debug\Фильм.exe: (anonymous namespace)::TX::_txSymGetFromAddr()
+# 9 0x00404225 in D:\FDSFSD\bin\Debug\Фильм.exe: (anonymous namespace)::TX::_txCleanup()
+#10 0x00406698 in D:\FDSFSD\bin\Debug\Фильм.exe: (anonymous namespace)::TX::_txCanvas_ThreadProc()
+#11 0x75C87EE5 in C:\WINDOWS\System32\msvcrt.dll: beginthreadex()
+#12 0x75C87FB1 in C:\WINDOWS\System32\msvcrt.dll: endthreadex()
+#13 0x75906739 in C:\WINDOWS\System32\KERNEL32.dll: BaseThreadInitThunk()
+#14 0x77A28FD2 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetFullPathName_UEx()
+#15 0x77A28F9D in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetFullPathName_UEx()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 10 2022 17:39:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 10 2022 17:39:41
+
+Run file:	D:\FDSFSD\bin\Debug\Фильм.exe
+Directory:	D:\FDSFSD
+
+--------------------------------------------------
